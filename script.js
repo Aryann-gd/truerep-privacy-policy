@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', async () => {
-      const email = 'support@truerep.app';
+      const email = 'support@truerep.com';
       try {
         await navigator.clipboard.writeText(email);
         copyBtnLabel.textContent = 'Copied!';
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
           copyBtnLabel.textContent = 'Copy Email';
         }, 2200);
       } catch (err) {
-        showToast('Email: support@truerep.app');
+        showToast('Email: support@truerep.com');
       }
     });
   }
